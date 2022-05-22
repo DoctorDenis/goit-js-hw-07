@@ -1,7 +1,6 @@
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const renderGalleryMarkup = gallery => {
   const markup = gallery.reduce((acc, { original, preview, description }) => {
@@ -20,7 +19,6 @@ renderGalleryMarkup(galleryItems);
 
 var carousel = new SimpleLightbox('.gallery a', {
   overlayOpacity: 0.7,
-  // captionSelector: (this) => { return console.log(this) },
   captionType: "attr",
   captionsData: "alt",
   captionsDelay: 250

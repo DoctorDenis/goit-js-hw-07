@@ -23,7 +23,6 @@ const renderGalleryMarkup = gallery => {
 
 function onEscapeBtnClick(e) {
   if (e.key === 'Escape') {
-    console.log(e.key);
     modalImage.close();
   }
 }
@@ -33,7 +32,6 @@ renderGalleryMarkup(galleryItems);
 document.querySelector('.gallery').addEventListener('click', onImageThumbnailClick);
 
 function onImageThumbnailClick(event) {
-  // if (event.target.)
   if (event.target.nodeName !== 'IMG') {
     return;
   } else {
